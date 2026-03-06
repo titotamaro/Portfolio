@@ -3,11 +3,12 @@ import './App.css';
 import Hero from './components/Hero';
 import Capabilities from './components/Capabilities';
 import Terminal from './components/Terminal';
+import Background from './components/Background';
 
 function App() {
   return (
     <div className="app-container">
-      <div className="background-glow"></div>
+      <Background />
 
       <nav className="navbar fade-in-up">
         <div className="logo text-gradient">TITO TAMARO.</div>

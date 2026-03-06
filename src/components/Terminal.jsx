@@ -2,10 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Terminal.css';
 
 const systemCommands = {
-    about: "I am Tito Tamaro, a results-oriented Project & Product Manager with over 5 years of experience delivering complex technical solutions.",
-    education: "B.S. in Materials Science and Engineering, Institut Teknologi Bandung (ITB) (2010-2015) | Purwadhika Digital Technology School (Data Analysis, Machine Learning)",
-    skills: "SAFe, Agile-Scrum, Waterfall, Azure, Jira, Python, PowerBI, Data Analytics, Project Planning, Risk Management.",
-    experience: "Berlian Sistem Informasi (Nov 2023 - Present) | Xtremax (Jan 2021 - Nov 2023) | Excel Metal Industry | NS Bluescope",
+    about: "I am Tito Tamaro, a results-oriented Project & Product Manager with over 5 years of experience delivering complex technical solutions in multinational environments.",
+    education: "B.S. in Materials Science and Engineering, Institut Teknologi Bandung (ITB) (2010-2015) | Purwadhika Digital Technology School (Data Analysis, Visualization, Machine Learning)",
+    skills: "SAFe, Agile-Scrum, Waterfall, Azure, Jira, Python, PowerBI, Data Analytics, MS Office Suite.",
+    experience: "Berlian Sistem Informasi (Nov 2023 - Present) | Xtremax (Jan 2021 - Nov 2023) | Excel Metal Industry | NS Bluescope Indonesia",
     contact: "Email: tito.tamaro2@gmail.com | LinkedIn: /in/titotamaro | Phone: (+62) 81-320-977-863",
     clear: "CLEAR",
     help: "Available commands: about, education, skills, experience, contact, clear, help"

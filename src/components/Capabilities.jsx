@@ -4,28 +4,28 @@ import './Capabilities.css';
 const capabilitiesList = [
     {
         title: "Project & Product Management",
-        description: "Driving cross-functional teams of up to 25 members to deliver complex solutions across automotive and government sectors.",
+        description: "Driving cross-functional teams of up to 25 members to deliver complex solutions across automotive and government sectors. Proven track record in Project Planning, Risk Management, and Stakeholder Communication.",
         icon: "📊",
         color: "var(--accent-purple)",
         delay: "delay-100"
     },
     {
         title: "Agile & SAFe Methodologies",
-        description: "Certified SAFe Product Manager bridging business needs and engineering delivery through Agile, Scrum, and Waterfall frameworks.",
+        description: "Certified SAFe Product Manager bridging business needs and engineering delivery through SAFe, Agile, Scrum, and Waterfall frameworks.",
         icon: "🔄",
         color: "var(--accent-cyan)",
         delay: "delay-200"
     },
     {
         title: "AI Integration & Data Analytics",
-        description: "Spearheaded RAG and generative AI (GPT-4) model deployment. Experienced in PowerBI and Python data workflows.",
+        description: "Spearheaded RAG and generative AI (GPT-4) model deployment via Azure & LangChain. Experienced in PowerBI and Python data workflows.",
         icon: "🧠",
         color: "var(--accent-blue)",
         delay: "delay-300"
     },
     {
         title: "Stakeholder Management",
-        description: "Primary liaison balancing strategic business goals, changing constraints, and technical feasibility.",
+        description: "Primary liaison balancing strategic business goals, changing constraints, and technical feasibility for multinational client engagements.",
         icon: "🤝",
         color: "var(--text-secondary)",
         delay: "delay-400"

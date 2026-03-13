@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://titotamaro.github.io/Personal-Webiste/",
+  "homepage": "https://titotamaro.github.io/portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

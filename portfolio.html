@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tito Tamaro - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+            padding: 20px 0;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+        .nav {
+            display: flex;
+            gap: 40px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 300;
+            font-size: 1rem;
+            transition: opacity 0.3s ease;
+        }
+        .nav a:hover {
+            opacity: 0.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        .hero {
+            padding: 200px 0 80px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            margin: 0;
+            letter-spacing: 0.1em;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 20px 0 0;
+            opacity: 0.8;
+        }
+        .section {
+            padding: 100px 0;
+            border-top: 1px solid #eee;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin: 0 0 60px;
+            letter-spacing: 0.05em;
+        }
+        .about-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        .experience-item, .project-item {
+            margin-bottom: 80px;
+        }
+        .experience-item h3, .project-item h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin: 0 0 10px;
+        }
+        .experience-item h4, .project-item h4 {
+            font-size: 1rem;
+            font-weight: 300;
+            opacity: 0.7;
+            margin: 0 0 20px;
+        }
+        .experience-item ul, .project-item ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .experience-item li, .project-item li {
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        .education-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        .education-column h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0 0 30px;
+        }
+        .education-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .education-column li {
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .skill-item {
+            font-weight: 300;
+        }
+        .skill-item strong {
+            display: block;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .contact {
+            text-align: center;
+            padding: 80px 0;
+        }
+        .contact p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            font-weight: 300;
+        }
+        .contact a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            .header .container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .nav {
+                gap: 20px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+            .section h2 {
+                font-size: 2rem;
+            }
+            .education-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">T I T O   T A M A R O</div>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>T I T O   T A M A R O</h1>
+            <p>Project & Product Manager | Agile & SAFe Certified</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>A B O U T</h2>
+            <p class="about-text">Results-oriented Strategic Leader with 9 years of experience in corporate strategy, digital transformation, and technical program management across multinational environments. Proven track record in Strategic Formulation, Partnership Management, and Digitalization within the automotive, technology, and manufacturing sectors. Over 5 years of leadership experience directing cross-functional teams of up to 25 members, driving end-to-end organic and inorganic growth initiatives, and managing multi-billion IDR portfolios. Adept at budgeting, financial modeling, and driving change management programs. Committed to integrating business capabilities with technology and sustainability (ESG) principles to enhance organizational efficiency and competitiveness.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>E X P E R I E N C E</h2>
+            <div class="experience-item">
+                <h3>Product & Project Manager</h3>
+                <h4>Berlian Sistem Informasi (Subsidiary of Mitsubishi Corporation) | Jakarta, Indonesia | Nov 2023 – Present</h4>
+                <ul>
+                    <li>Strategic Formulation & Execution: Formulate and execute mid-to-long-term strategic plans and digitalization initiatives for Mitsubishi Motors (MMKSI), aligning with corporate objectives to improve operational efficiency.</li>
+                    <li>Budgeting & Financial Modeling: Oversee budgeting for multi-billion IDR portfolios, developing business cases, profitability projections, and assessing financial viability of new business capabilities.</li>
+                    <li>Stakeholder & Change Management: Manage strategic communications with executives and stakeholders, driving change management programs to ensure successful adoption of transformation initiatives.</li>
+                    <li>Strategic Partnerships & Innovation: Evaluate business opportunities and incubate initiatives with external partners to expand the corporate portfolio. Spearheaded RAG AI implementation (EIRA platform) to boost organizational productivity.</li>
+                    <li>ESG & Sustainability Integration: Lead initiatives integrating ESG principles and Good Corporate Governance (GCG) into technological delivery and vendor management workflows.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Business Analyst & Engagement Manager</h3>
+                <h4>Xtremax | Bandung, Indonesia – Singapore | Jan 2021 – Nov 2023</h4>
+                <ul>
+                    <li>Strategic Consulting & Analysis: Conducted quantitative and qualitative market analysis on industry trends to identify strategic opportunities and support competitive bidding for Singaporean Government digital projects.</li>
+                    <li>Commercial Acumen & Growth: Managed the end-to-end proposal processes for 20+ high-stakes government tenders, driving organic growth and profitability through strategic pricing and financial modeling.</li>
+                    <li>Partnership & Engagement: Established and developed robust strategic partnerships across public sectors, maximizing synergy and ensuring alignment between client capabilities and proposed SaaS solutions.</li>
+                    <li>Digital Transformation Delivery: Translated complex macro trends and business requirements into effective digital strategies, implementing process improvements and MVP delivery within Agile frameworks.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Engineering & Production Staff</h3>
+                <h4>Excel Metal Industry | Cikarang, Indonesia | Oct 2018 – Mar 2020</h4>
+                <ul>
+                    <li>Operational Strategy & Efficiency: Analyzed and optimized manufacturing workflows using the SQCDM framework, identifying operational risks and driving efficiency improvements on the shop floor.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Technical Marketing Engineer</h3>
+                <h4>NS Bluescope Indonesia | Jakarta, Indonesia | Mar 2017 – Oct 2018</h4>
+                <ul>
+                    <li>Market Analysis & Product Innovation: Conducted competitive landscape assessments to support service innovation and product development, bridging technical capabilities with market demands.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>P R O J E C T S</h2>
+            <div class="project-item">
+                <h3>MMKSI & BSI Strategic Portfolio</h3>
+                <h4>Strategic Portfolio Manager</h4>
+                <ul>
+                    <li>Scope: Directed mid-to-long-term strategic portfolio bridging MMKSI and BSI, delivering regular strategic reports and transformation analyses to top management.</li>
+                    <li>Impact: Managed a 1 Billion IDR/year executive mandate to govern and guarantee the successful end-to-end incubation and delivery of all transportation/automotive digital initiatives.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>MMKSI New HRD System</h3>
+                <h4>Project Lead / Strategic Lead</h4>
+                <ul>
+                    <li>Scope: Spearheaded the digitalization and delivery of a new enterprise HRD system with a project budget of nearly 2.5 Billion IDR.</li>
+                    <li>Execution: Conducted comprehensive vendor business capability assessments, managed budgeting, and implemented change management programs to ensure seamless adoption.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>AOI Division (MMKSI)</h3>
+                <h4>Project Lead</h4>
+                <ul>
+                    <li>Scope: Provisioning and management of all digital projects for the AOI division.</li>
+                    <li>Management: Directed a large team of 25 members. Managed resources, schedules, and deliverables using .NET, PHP, and Azure platforms.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>EIRA -- AI Assistant</h3>
+                <h4>Product Owner</h4>
+                <ul>
+                    <li>Scope: Development of a generative AI chat model for enterprise assistance.</li>
+                    <li>Outcome: Successfully led a team of 4 to deploy a GPT-4 based solution using Azure and LangChain, enhancing internal information retrieval.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>ACEAS -- CEA Singapore</h3>
+                <h4>Business Analyst</h4>
+                <ul>
+                    <li>Scope: Massive web application project for the Council for Estate Agencies (CEA) Singapore involving licensing and exam modules.</li>
+                    <li>Complexity: Collaborated with a team of 20 members within a high-pressure government regulatory environment, utilizing Docker and Kubernetes.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Sales Incentive Automation -- Danone Indonesia</h3>
+                <h4>Product Owner</h4>
+                <ul>
+                    <li>Scope: Automated complex manual incentive calculations to reduce human error and turnaround time.</li>
+                    <li>Business Impact: Delivered a PowerBI dashboard that improved decision-making speed for the client.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>E D U C A T I O N   &   S K I L L S</h2>
+            <div class="education-grid">
+                <div class="education-column">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>Institut Teknologi Bandung (ITB)</strong> | 2010 – 2015<br>B.S. in Materials Science and Engineering</li>
+                        <li><strong>Purwadhika Digital Technology School</strong> | Jun 2020 – Dec 2020<br>Data Analysis, Visualization, Machine Learning</li>
+                    </ul>
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li><strong>SAFe Product Owner / Product Manager</strong>, Scaled Agile Framework (SAFe) | Nov 2024 – Present</li>
+                        <li><strong>AWS Cloud Practitioner</strong>, Amazon Web Services | Sep 2021 – Present</li>
+                    </ul>
+                </div>
+                <div class="education-column">
+                    <h3>Core Competencies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <strong>Project Management:</strong> Project Planning & Scheduling, Risk Mitigation, Resource Allocation, Budget & Scope Management, Change Management.
+                        </div>
+                        <div class="skill-item">
+                            <strong>Stakeholder Management:</strong> Client Engagement, Cross-Functional Collaboration, Vendor Management, Executive Reporting.
+                        </div>
+                        <div class="skill-item">
+                            <strong>Methodologies:</strong> Scaled Agile Framework (SAFe), Agile-Scrum, Waterfall, SDLC.
+                        </div>
+                        <div class="skill-item">
+                            <strong>Technical & Tools:</strong> Azure, Jira, Python, PowerBI, Data Analytics, MS Office Suite.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>C O N T A C T</h2>
+            <p>Jakarta, Indonesia</p>
+            <p><a href="mailto:tito.tamaro2@gmail.com">tito.tamaro2@gmail.com</a></p>
+            <p>(+62) 81-320-977-863</p>
+            <p><a href="https://www.linkedin.com/in/titotamaro/">LinkedIn</a> | <a href="https://github.com/titotamaro">GitHub</a></p>
+        </div>
+    </section>
+</body>
+</html>

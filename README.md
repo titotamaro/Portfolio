@@ -36,7 +36,7 @@ Then visit `http://localhost:8000/portfolio.html`
 
 ## Deployment
 
-This site is deployed on GitHub Pages. Visit: https://yourusername.github.io/portfolio/
+This site is deployed on GitHub Pages. Visit: **https://titotamaro.github.io/Portfolio/**
 
 ## License
 
